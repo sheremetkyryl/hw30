@@ -1,0 +1,35 @@
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.block {
+    padding: 50px 50px;
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    animation: translate 2s infinite ease 0.5s;
+}
+@keyframes translate {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: blue;
+        transform: translate(0,300px);
+    
+    }
+    50% {
+        background-color: green;
+        transform: translate(300px, 300px);
+    }
+    75% {
+        background-color: yellow;
+        transform: translate(300px, 0);
+    }
+    100% {
+        background-color: red;
+    }
+}
